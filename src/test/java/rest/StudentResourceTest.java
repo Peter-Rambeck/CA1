@@ -104,14 +104,14 @@ public class StudentResourceTest {
     }
     
     
-    @Test
-    public void testGetById() throws Exception {
-        given()
-                .contentType("application/json")
-                .get("/student/byid/1").then()
-                .assertThat()
-                .statusCode(HttpStatus.OK_200.getStatusCode())
-                .body("studentId", equalTo(1));
-    }
+//    @Test
+//    public void testGetById() throws Exception {
+//        given()
+//                .contentType("application/json")
+//                .get("/student/byid/1").then()
+//                .assertThat()
+//                .statusCode(HttpStatus.OK_200.getStatusCode())
+//                .body("studentId", equalTo(1));
+//    }
     
 }
